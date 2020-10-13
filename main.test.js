@@ -2,7 +2,7 @@ const {
   onlyOdds,
   onlyEvens,
   shortNamesOnly,
-  dNames,
+  sNames,
 } = require('./main.js')
 
 
@@ -140,40 +140,40 @@ describe('shortNamesOnly', () => {
   });
 });
 
-describe('dNames', () => {
-  it(`returns only the names that begin with d`, () => {
+describe('sNames', () => {
+  it(`returns only the names that begin with a capital S`, () => {
     const names1 = [
       'Colin',
       'Mesuara',
-      'Chase',
-      'Dallas',
-      'Crystal',
-      'Marc',
-      'Miley',
-      'Sharod',
+      'Patrick',
+      'Fernando',
+      'Nicholas',
+      'Ilyas',
+      'Sonny',
+      'Steve',
+      'Greg',
+      'Timothy',
     ];
 
-    const dNames1 = [
-      'Dallas',
+    const sNames1 = [
+      'Sonny',
+      'Steve',
     ];
 
     const names2 = [
-      'LaToddra',
-      'Deaundre',
-      'Daniel',
-      'Carlos',
-      'Francis',
-      'Prem',
-      'Jumary',
+      'Superman',
+      'Spiderman',
+      'Batman',
+      'Wonderman',
     ];
 
-    const dNames2 = [
-      'Deaundre',
-      'Daniel',
+    const sNames2 = [
+      'Superman',
+      'Spiderman',
     ];
     
-    expect(dNames(names1)).toEqual(dNames1);
-    expect(dNames(names2)).toEqual(dNames2);
+    expect(sNames(names1)).toEqual(sNames1);
+    expect(sNames(names2)).toEqual(sNames2);
   });
 
   it(`does not modify the original array`, () => {
@@ -219,8 +219,8 @@ describe('dNames', () => {
       'Jumary',
     ];
 
-    dNames(names1);
-    dNames(names2);
+    sNames(names1);
+    sNames(names2);
     expect(names1).toEqual(original1);
     expect(names2).toEqual(original2);
   });

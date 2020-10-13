@@ -26,4 +26,3 @@ So to sum up: a map operation gives you new values, one for each old value. A fi
 ### Guidelines
 
 * Every one of these four functions is a simple filter. Check the tests for full descriptions and examples.
-* Try to use `for of` loops. They can all be solved that way!

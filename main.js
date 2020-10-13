@@ -24,8 +24,8 @@ if (typeof shortNamesOnly === 'undefined') {
   shortNamesOnly = undefined;
 }
 
-if (typeof dNames === 'undefined') {
-  dNames = undefined;
+if (typeof sNames === 'undefined') {
+  sNames = undefined;
 }
 
 
@@ -33,5 +33,5 @@ module.exports = {
   onlyOdds,
   onlyEvens,
   shortNamesOnly,
-  dNames,
+  sNames,
 }
