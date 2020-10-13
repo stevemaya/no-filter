@@ -25,11 +25,27 @@ function onlyEvens(nums) {
   return result;
 }
 
+function shortNamesOnly(names) {
+  const shorter = [];
 
+  for (let i = 0; i < names.length; i++) {
+      if(names[i].length < 7) { 
+          shorter.push(names[i]);
+      }
+  }
+  return shorter;
+}
 
+function sNames(names) {
+  const namesThatStartWithS = [];
 
-
-
+  for (let i = 0; i < names.length; i++) {
+      if((names[i][0]) === "S") { 
+          namesThatStartWithS.push(names[i]);
+      }
+  }
+  return namesThatStartWithS;
+}
 /*********************************
  * OUR CODE BELOW; DO NOT TOUCH! *
  *********************************/
